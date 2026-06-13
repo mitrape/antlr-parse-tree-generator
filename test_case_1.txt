@@ -1,0 +1,47 @@
+Class TEst1 :{
+
+int count = 10;!:
+string status = “Running Tests”;!:
+char grade = 'A';!:
+boolean isActive = true;!:
+
+int numbers = !5! int {1, 2, 3, 4, 5};!:
+string messages = !3! string {“OK”, “Fail”, “Retry”};!:
+
+fun checkStatus string ! inputStatus ! :{
+    status = inputStatus;!:
+    if !status == “Running Tests”! :{
+        print ! “Test is active” !;!:
+    }:
+    else :{
+        print ! “Test is idle” !;!:
+    }:
+    RETURN string status;!:
+}:
+
+fun loopTest int ! x ! :{
+    for i in range ! 0 , x ! :{
+        print ! i !;!:
+    }:
+    RETURN;!:
+}:
+
+fun fileOps string ! filename ! :{
+    fileHandle = open ! "log.txt", "w" !;!:
+    fileHandle.write ! “Test log started” !;!:
+    fileHandle.close ! !;!:
+    RETURN;!:
+}:
+
+
+
+fun logicTest boolean ! flag ! :{
+    if !flag! :{
+        print ! “Flag is true” !;!:
+    }: else :{
+        print ! “Flag is false” !;!:
+    }:
+    RETURN boolean flag;!:
+}:
+
+}:

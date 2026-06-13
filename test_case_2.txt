@@ -1,0 +1,13 @@
+Class LAmp :{
+
+boolean isOn = false;!:
+int Array = !4! int {0, 1, 2, 3} ;!:
+
+fun turnOn int !number! :{
+    isOn = true;!:
+    print ! “Light on? ” !;!:
+    print ! isOn !;!:
+    RETURN;!:
+}:
+
+}:

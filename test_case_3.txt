@@ -1,0 +1,54 @@
+Include ! math.kh ! ;!:
+From ! math.kh ! Include delta ;!:
+Public Fun text string ! text1 ! :{
+Text1 = “hello dude” ;!:
+RETURN ;!: }:
+
+Fun sum int !num1, num2! :{
+Number3 = num1 + num2 ;!:
+RETURN int Number3;!:
+}:
+
+Int sum = 0 ;!:
+String text = “hello word” ;!:
+
+While !true! :{
+Print!i! ;!:
+i = i+1 ;!:
+}:
+For x in arr:{
+Print!x!;!:
+}:
+For x in Range !6!:{
+Print!x!;!:
+}:
+int arr1 = !3! int {0, 1, 2} ;!:
+char arr2 = !4! char ;!:
+
+If ! s == 5 ! :{
+s--;!:
+}:
+else if ! s < 5 ! :{
+s++;!:
+}:
+
+Sw ! count ! :{
+case 0:
+RETURN 0 ;!:
+case 1:
+RETURN 1 ;!:
+dEfault:!
+RETURN “pain” ;!:
+!
+}:
+
+file = open!"example.txt","w"! ;!:
+file.write!“example@gmail”! ;!:
+file.close!! ;!:
+
+
+try:{
+t = t + 1 ;!:
+}:
+except valError :{
+print!23! ;!: }:
